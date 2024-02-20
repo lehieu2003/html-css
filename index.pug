@@ -1,0 +1,11 @@
+extends ./view/layout/layout-tour.pug
+block vars 
+    - var title = 'HOME PAGE'
+append head 
+    link(rel="stylesheet" href="./css/main.css")
+block main 
+    main     
+        include ./view/home/TopTours.pug
+        include ./view/home/Popular.pug
+        include ./view/home/Diamond.pug
+        include ./view/home/Grid.pug

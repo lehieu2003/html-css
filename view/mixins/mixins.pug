@@ -1,0 +1,33 @@
+mixin tourItem(image, price, title, review, reviewCount, duration, tourPrice)
+    .tour-item  
+        .tour-top 
+            img.tour-image(src= image, alt='bali')
+            span.tour-price= price
+        .tour-content 
+            h3.tour-title=  title
+            .tour-rating 
+                .tour-review 
+                    .tour-star  
+                        img(src= './image/Shape.png', alt='star')
+                    .tour-review-count
+                        span= review 
+                            |  (#{reviewCount} reviews)
+
+                span.tour-duration  Duration: #{duration}
+            a.tour-button(href="https://evondev.com/", target='_blank', rel='noopener noreferrer') Tours Price $#{tourPrice}                     
+
+
+mixin popularItem (image, title, rating, reviewCount)
+    .popular-item
+        .popular-image
+            .popular-overlay  
+            img.popular-img(src= image , alt='unslap picture')
+            span.popular-label Must see 
+        .popular-content
+            span.popular-time Sep 28 10:00 AM - 1:00 PM 
+            h3.popular-title=  title 
+            .popular-review
+                img(src= './image/Shape.png' , alt='star')
+                span= rating
+                    |  (#{reviewCount} reviews)
+                    

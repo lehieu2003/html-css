@@ -1,0 +1,38 @@
+footer.footer
+    .container.footer-container 
+        .footer-top 
+            .footer-columns 
+                .footer-column
+                    a.footer-logo(href="/") 
+                        img(src="./image/logo.png", alt="Airtrav")
+                    p.footer-desc Similarly, a loan taken out to buy a car may be secured by the car. The duration of the loan.  
+                    form.subscribe(action="")
+                        input(type="email" placeholder="Enter your email ").subscribe-email 
+                        button.subscribe-button(type="Submit")
+                            img(src="./image/Line.png", alt="icon-arrow-right")
+                .footer-column 
+                    h4.footer-heading Services
+                    ul.footer-links  
+                        each val in["Trip Planner","Tour Planning","Tour Guide","Tour Package","Tour advice"]
+                            li.footer-item 
+                                a.footer-link(href="#")= val  
+                .footer-column 
+                    h4.footer-heading Support
+                    ul.footer-links  
+                        each val in["Account","Legal","Contact","Terms & Condition","Privacy Policy"]
+                            li.footer-item 
+                                a.footer-link(href="#")= val
+                .footer-column 
+                    h4.footer-heading Business
+                    ul.footer-links  
+                        each val in["Success","About Locato","Blog","Information","Travel Guide"]
+                            li.footer-item 
+                                a.footer-link(href="#")= val
+                .footer-column 
+        .footer-bottom 
+            p.footer-copyright Copyright© 2021 UIHUT LLC. All rights reserved 
+                .footer-socials 
+                    each val in [1,2,3,4]
+                        .footer-social-item 
+                            a.footer-social-link(href="#")
+                                img(src= "./image/face.png", alt="facebook") 

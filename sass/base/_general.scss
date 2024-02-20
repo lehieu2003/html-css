@@ -1,0 +1,15 @@
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    background-color: white;
+    font-size: var(--font-size-default);
+    color: var(--gray-3);
+    line-height: 1;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

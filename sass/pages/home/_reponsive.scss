@@ -1,0 +1,74 @@
+@media screen and (max-width: 1023.98px) {
+    .tour-list{
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .footer-column:first-child{
+        max-width: 268px;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+
+    .tour-title{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .tour-review-count,
+    .tour-duration,
+    .tour-price{
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .tour-list{
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+
+    .diamond{
+        padding: 30px 0;
+    }
+
+    .diamond-list{
+        grid-template-columns: 1fr;
+        gap:16px;
+    }
+
+    .diamond-item{
+        padding: 8px;
+    }
+
+    .diamond-all{
+        margin-top: 30px;
+        margin-bottom: 0;
+        font-size: 16px;
+        padding: 4px 20px;
+    }
+
+    .diamond-all{
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    .footer{
+        padding: 30px ;
+    }
+
+    .footer-top{
+        padding-bottom: 30px;
+    }
+
+    .footer-bottom,
+    .footer-columns{
+        flex-direction: column;
+    }
+
+    .footer-columns{
+        gap: 40px;
+    }
+}

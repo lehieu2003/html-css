@@ -1,0 +1,36 @@
+@mixin flex($align-item: flex-start, $justify-content: flex-start, $gap: 0px, $flex-direction: row, $flex-wrap: nowrap){
+    display: flex;
+    align-items: $align-item;
+    justify-content: $justify-content;
+    gap: $gap;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+}
+
+@mixin flexOptimized($options){
+    display: flex;
+    align-items: map-get($options, ai);
+    justify-content: map-get($options, jc);
+    gap: map-get($options, gap );
+    flex-direction: map-get($options, fd );
+}
+
+@mixin minWidth($breakpoint: 0){
+    @if $breakpoint != 0{
+        @media screen and (min-width: $breakpoint) {
+            @content;
+        }
+    }
+}
+
+@mixin maxWidth($breakpoint){
+    @media screen and (max-width: $breakpoint){
+        @content;
+    }
+}
+
+@mixin minMax($min, $max){
+    @media screen and (min-width: $min) and (max-width: $max){
+        @content;
+    }
+}

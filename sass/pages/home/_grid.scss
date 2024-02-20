@@ -1,0 +1,61 @@
+.grid{
+    &-layout{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minMax(100px,1fr));
+        gap: 20px;
+    }
+
+    &-item{
+        aspect-ratio: 1/1;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        @include flex(center,center);
+    }
+}
+.my-name{
+    text-align: center;
+    position: relative;
+    span{
+        &:before{
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: black;
+            left: 0;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    
+    span{
+        position: absolute;
+        z-index: 2;
+        background-color: green($color: #000000);
+        padding: 5px;
+        color: red;
+    }
+}
+
+.button-rounded{
+    width: 50px;
+    height: 50px;
+    border-radius: 100rem;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    // color: pink;
+    // background-color: rgba(255, 192, 203,0.3);
+    color: orange;
+    position: relative;
+    visibility: 0.3;
+    &::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        background-color: currentColor;
+        cursor: pointer;
+    }
+
+    
+}
